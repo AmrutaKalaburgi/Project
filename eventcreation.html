@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+    <center><h1>Event details</h1></center>
+<form name="myforms" action="a.html" onclick="validate()" method="post" style="border:2px solid black;width:60%;height:250%;margin:auto"><br>
+    <div class="form-group bg-warning">
+        <label for="Ename">Event Name</label>
+        <input type="text" name="en" class="form-control" required>
+    </div><br>
+    <div class="form-group bg-primary" >
+        <label for ="des">Event Description:</label>
+        <input type="text" name="Des" class="form-control"  required>
+    </div><br>
+    <div class="form-group bg-primary">
+        <label for="date">Event Date</label>
+        <input type="date" name="date" class="form-control" required>
+    </div><br>
+    <div class="form-group bg-primary">
+        <label for="Loc">Event Location</label>
+        <input type="text" name="Loc" class="form-control"  required>
+    </div><br>
+    <div class="form-group bg-info">
+        <label for="Etype">Event Type</label>
+        <input type="text" name="Etype" class="form-control"  required>   
+    </div><br>
+    <div class="form-group bg-info">
+        <label for="Estatus">Event Status</label>
+        <input type="text" name="Estatus" class="form-control"  required>   
+    </div><br>
+    <div class="form-group bg-info">
+        <label for="seats">Max seats</label>
+        <input type="number" name="seats"   class="form-control" required >
+    </div>
+    <center><input type="submit"</center>
+</form>
+<!-- <script>
+    var num=document.forms["myforms"]["phone"];
+    function validate(){
+        if(num.value==""){
+            alert("number field cant be empty");
+            return false;
+        }
+        if(num.value>10){
+            alert("numbercant be greater than 10");
+        }
+    }
+</script> -->
+</body>
+</html>

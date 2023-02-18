@@ -1,0 +1,73 @@
+<html>
+<head>
+</head>
+<body>
+    <center><h1>Event details</h1></center>
+<form name="myforms" action="a.html" onclick="validate()" method="post" style="border:2px solid black;width:60%;height:250%;margin:auto"><br>
+    <div class="form-group bg-warning">
+        <label for="fname">firstname:</label>
+        <input type="text" name="fn" class="form-control" required>
+    </div><br>
+    <div class="form-group bg-primary">
+        <label for ="lname">Lastname:</label>
+        <input type="text" name="ln" class="form-control" required>
+    </div><br>
+    <div class="form-group bg-primary">
+        <label for="email">E-mail:</label>
+        <input type="email" name="em" class="form-control" required>
+    </div><br>
+    <div class="form-group bg-primary">
+        <label for="mbn">Phone number</label>
+        <input type="number" name="mbn" id="phone" class="form-control" maxlenth="10" required>
+    </div><br>
+    <div class="form-group bg-info">
+        <label for="no.of seats">No.of seats</label>
+        <input type="number" name="no.of seats"   class="form-control" required placeholder="1">
+    </div>
+    <br>
+    <br>
+    <div class="form-group">
+        <label for="events"><u><b>Events:</b></u></label>
+        <br>
+        <br>
+        <input type="checkbox" name="music festival" class="form-control">
+        <label>Music Festival:</label>
+        <br>
+        <input type="checkbox" name="Bussiness Conference" class="form-control">
+        <label>Bussiness Conference:</label>
+        <br>
+        <input type="checkbox" name="Hip Hop Beginners Class" class="form-control">
+        <label>Hip Hop Beginners Class:</label>
+        <br>
+        <input type="checkbox" name="Art&Craft Workplace" class="form-control">
+        <label>Art&Craft Workplace:</label>
+        <br>
+        <input type="checkbox" name="Book Reading Festival" class="form-control">
+        <label>Book Reading Festival:</label>
+        <br>
+        <input type="checkbox" name="State Chess Championship" class="form-control">
+        <label>State Chess Championship:</label>
+        <br>
+        <input type="checkbox" name="Open mic" class="form-control">
+        <label>Open mic:</label>
+        <br>
+        <input type="checkbox" name="Sudoko Championship" class="form-control">
+        <label>Sudoko Championship:</label>
+        <br>
+    </div>
+    <center><input type="submit"</center>
+</form>
+<script>
+    var num=document.forms["myforms"]["phone"];
+    function validate(){
+        if(num.value==""){
+            alert("number field cant be empty");
+            return false;
+        }
+        if(num.value>10){
+            alert("numbercant be greater than 10");
+        }
+    }
+</script>
+</body>
+</html>
